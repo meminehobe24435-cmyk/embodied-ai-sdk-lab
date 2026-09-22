@@ -1,0 +1,24 @@
+﻿python : test_export_file_exists_and_loadable (test_sdk.TestExport) ... ok
+所在位置 行:40 字符: 1
++ python -m unittest discover -s tests -v 2>&1 | Out-File -Encoding utf ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_export_fil...tExport) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_torchscript_matches_pytorch (test_sdk.TestExport) ... ok
+test_benchmark_fields (test_sdk.TestInferenceApi) ... ok
+test_predict_shapes_and_confidence (test_sdk.TestInferenceApi) ... ok
+test_preprocess_uint8_and_float (test_sdk.TestInferenceApi) ... ok
+test_dataset_is_deterministic (test_sdk.TestModelAndData) ... ok
+test_model_learns_synthetic_task (test_sdk.TestModelAndData) ... ok
+test_original_model_untouched (test_sdk.TestQuantize) ... ok
+test_quantized_agrees_with_fp32 (test_sdk.TestQuantize) ... ok
+test_quantized_model_is_smaller (test_sdk.TestQuantize) ... ok
+test_ring_buffer_drops_oldest (test_sdk.TestSensors) ... ok
+test_simulated_source_is_reproducible (test_sdk.TestSensors) ... ok
+test_source_works_with_inference (test_sdk.TestSensors) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.004s
+
+OK
